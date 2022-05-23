@@ -94,3 +94,8 @@ function changeColor(pixel) {
 
 console.log('variable invader[0] apres changement de couleur: ', invader1[0]);
 
+formElement = d.createElement('input');
+headerElement = d.querySelector('.configuration');
+headerElement.appendChild(formElement);
+console.log(formElement);
+//formElement.
