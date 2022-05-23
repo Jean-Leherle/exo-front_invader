@@ -18,14 +18,30 @@ main {
 }
 
 #invader {
-    
+    margin: 3rem;
+    display: grid;
+    grid-template-columns:repeat(8,1fr) ;
+    grid-template-rows: repeat(8,1fr) ;
 }
 .pixel{
     height: 15px;
     width: 15px;
 }
 .color--grey{
-    background-color: #dddddd;
-    border: #b3b3b3 solid 2px;
+    background-color: #d2dae2;
+    border: #808e9b solid 2px;
 }
 
+.color--green{
+    background-color: #79ea83;
+    border: #65c66d solid 2px;
+}
+
+.color--yellow{
+    background-color: #fbc048;
+    border: #f7a835 solid 2px;
+}
+.color--dark{
+    background-color: #485460;
+    border: #1e272e solid 2px;
+}
