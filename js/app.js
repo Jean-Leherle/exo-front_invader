@@ -37,17 +37,16 @@ renvoie l'objet pixel
 
 */
 function recherchePixelById(elementId) {
-    var resultat= undefined;
+    var resultat = undefined;
     for (var i = 0; i < invader1.length; i++) {
         if (invader1[i].idPixel == parseInt(elementId)) {
-            resultat=invader1[i];
+            resultat = invader1[i];
             break;
         }
     }
-    if (resultat===undefined ){
+    if (resultat === undefined) {
         console.log('pas trouvé');
-    }
-    else{
+    } else {
         return resultat;
     }
 }
@@ -94,8 +93,35 @@ function changeColor(pixel) {
 
 console.log('variable invader[0] apres changement de couleur: ', invader1[0]);
 
-formElement = d.createElement('input');
-headerElement = d.querySelector('.configuration');
-headerElement.appendChild(formElement);
-console.log(formElement);
+function createForm(type, classElement) {
+    formElement = d.createElement(type);
+    parentElement = d.querySelector('.configuration');
+    parentElement.appendChild(formElement);
+    formElement.className = classElement;
+    return formElement;
+}
+var ligneInputElement = createForm('input', 'ligneInput');
+ligneInputElement.style.borderTopLeftRadius= '1rem';
+ligneInputElement.style.borderBottomLeftRadius= '1rem';
+ligneInputElement.type='number';
+ligneInputElement.placeholder = 'nombre de ligne';
+ligneInputElement.style.textAlign= 'center';
+ligneInputElement.min='1'
+var columnInputElement = createForm('input', 'columninput');
+columnInputElement.type='number';
+columnInputElement.placeholder = 'nombre de colonne';
+columnInputElement.style.textAlign= 'center';
+columnInputElement.min='1'
+
+var pixelSizeInputElement = createForm('input', 'pixelSizeInput')
+pixelSizeInputElement.type='number';
+pixelSizeInputElement.placeholder = 'nombre de pixel';
+pixelSizeInputElement.min='1'
+
+pixelSizeInputElement.style.textAlign= 'center';
+
+var buttonElement = createForm('button', 'buttonValidate')
+buttonElement.style.borderTopRightRadius= '1rem';
+buttonElement.style.borderBottomRightRadius= '1rem';
+
 //formElement.
