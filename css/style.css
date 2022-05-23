@@ -1,8 +1,9 @@
 body {
     width: 100%;
     height: calc(100vh - 5rem);
-    background-color: #6759cd;   
+    background-color: #6759cd;
 }
+
 .configuration {
     background-color: #3148ad;
     width: 100%;
@@ -12,9 +13,8 @@ body {
     align-items: center;
 }
 
-.configuration>*{
+.configuration>* {
     height: 3rem;
-
 }
 
 main {
@@ -25,31 +25,51 @@ main {
     height: 100%;
 }
 
+input[type="number"] {
+    padding: 0 2px;
+    margin: 0 1px;
+}
+input{
+    border: none;
+}
+
 #invader {
     margin: 3rem;
     display: grid;
-    grid-template-columns:repeat(8,1fr) ;
-    grid-template-rows: repeat(8,1fr) ;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 }
-.pixel{
+
+.pixel {
     height: 15px;
     width: 15px;
 }
-.color--grey{
+
+.color--grey {
     background-color: #d2dae2;
     border: #808e9b solid 2px;
 }
 
-.color--green{
+.color--green {
     background-color: #79ea83;
     border: #65c66d solid 2px;
 }
 
-.color--yellow{
+.color--yellow {
     background-color: #fbc048;
     border: #f7a835 solid 2px;
 }
-.color--dark{
+
+.color--dark {
     background-color: #485460;
     border: #1e272e solid 2px;
+}
+
+.color--red{
+    background-color: #ff5656;
+    border: #fa2424 solid 2px;
+}
+.color--blue{
+    background-color: rgb(122, 122, 255);
+    border: rgb(49, 49, 255) solid 2px;
 }
