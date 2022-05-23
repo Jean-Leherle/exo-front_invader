@@ -1,8 +1,7 @@
 body {
     width: 100%;
-    height: 100%;
-    background-color: #6759cd;
-    
+    height: calc(100vh - 5rem);
+    background-color: #6759cd;   
 }
 .configuration {
     background-color: #3148ad;
@@ -10,7 +9,23 @@ body {
     height: 5rem;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 #invader {
     
+}
+.pixel{
+    height: 15px;
+    width: 15px;
+}
+.color--grey{
+    background-color: #dddddd;
+    border: #b3b3b3 solid 2px;
 }
 
